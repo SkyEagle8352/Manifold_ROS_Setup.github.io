@@ -73,9 +73,9 @@ sudo apt-get install cuda-toolkit-6-5
 - 在终端输入以下指令进行安装：(大约需要10~15min)
 ```shell
 cd <path>
-sudo dpkg -i cuda-repo-l4t-r21.3-6-5-prod_6.5-42_armhf.deb 
-sudo apt-get update 
-sudo apt-get install cuda-toolkit-6-5
+sudo dpkg -i libopencv4tegra-repo_l4t-r21_2.4.10.1_armhf.deb
+sudo apt-get update
+sudo apt-get install libopencv4tegra libopencv4tegra-dev libopencv4tegra-python
 ```
 ---
 ## 3. 安装ROS(UbuntuARM平台版本)
