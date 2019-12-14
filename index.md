@@ -106,7 +106,7 @@ sudo apt-get update
 sudo apt-get install ros-indigo-ros-base
 sudo apt-get install ros-indigo-desktop
 ```
-## 配置
+### 配置
 输入如下指令，初始化rosdep
 ```shell
 sudo apt-get install python-rosdep
