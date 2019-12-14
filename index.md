@@ -118,6 +118,7 @@ rosdep update
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
+---
 ## 感谢
 本文参考了以下内容：
 - [Manifold用户手册v1.2](https://dl.djicdn.com/downloads/manifold/20170918/Manifold_User_Manual_v1.2_CH.pdf)
