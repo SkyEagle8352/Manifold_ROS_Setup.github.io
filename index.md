@@ -82,11 +82,13 @@ sudo apt-get install cuda-toolkit-6-5
 参考[ROSwiki](http://wiki.ros.org/indigo/Installation/UbuntuARM)，可以看到，它是支持Manifold平台的，所以要相信能安装成功, 如果不行那就重头再来一次[手动捂脸]。
 ![avatar](fig/support.jpg)
 
-首先进行区域设置
+### 首先进行区域设置
 ```shell
 sudo update-locale LANG = C LANGUAGE = C LC_ALL = C LC_MESSAGES = POSIX
 ```
-添加源和密钥，这里和参考的不一样，因为之前出现过漏洞的原因，所以密钥被换过（不要问笔者为什么知道的[手动捂脸]）。
+
+### 添加源和密钥
+这里和参考的不一样，因为之前出现过漏洞的原因，所以密钥被换过（不要问笔者为什么知道的[手动捂脸]）。
 ```shell
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo -E apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
@@ -98,18 +100,21 @@ sudo apt-key del B01FA116
 sudo -E apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt-get update
 ```
+### 安装ROS
 输入如下指令安装ROS：(此处等待过程非常漫长，建议睡觉前开始[手动捂脸])
 ```shell
 sudo apt-get install ros-indigo-ros-base
 sudo apt-get install ros-indigo-desktop
 ```
-初始化rosdep
+## 配置
+输入如下指令，初始化rosdep
 ```shell
 sudo apt-get install python-rosdep
 sudo rosdep init
 rosdep update
 ```
-设置环境
+
+输入如下指令，设置环境
 ```shell
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
