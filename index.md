@@ -17,27 +17,30 @@
 mkdir  ~/manifold
 cd ~/manifold
 sudo tar -xvpzf  /manifold_image_v1.0.tar.gz
+```
 
+## 妙算进入恢复模式
+参考[使用手册](https://dl.djicdn.com/downloads/manifold/20170918/Manifold_User_Manual_v1.2_CH.pdf),笔者使用的方法：
+- 连接妙算和计算机 (Manifold)micro-B <-> USB(PC);
+- 连接电源;
+- 按住recover键不松开，再按下电源键，释放电源键后松开recover键。
 
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+在终端中输入
 ```markdown
-Syntax highlighted code block
+lsusb
+```
+若出现信息中包含有如下所示的项则进入回复模式成功，否正重来。
+在终端中输入
+```markdown
+Bus 001 Device 008: ID 0955:7740 Nvidia Corp.
+```
+## 制作系统镜像
+同样参考[使用手册](https://dl.djicdn.com/downloads/manifold/20170918/Manifold_User_Manual_v1.2_CH.pdf)：
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+输入以下指令:
+```markdown
+cd ~/manifold/Linux_for_Tegra/bootloader
+sudo ./nvflash --read APP system.img --bl ardbeg/fastboot.bin –go
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
