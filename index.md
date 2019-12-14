@@ -1,10 +1,21 @@
-## Welcome to GitHub Pages
+## Manifold配置ROS开发环境（妙算试坑笔记）
 
-You can use the [editor on GitHub](https://github.com/SkyEagle8352/Manifold_ROS_Setup.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+妙算[Manifold](https://www.dji.com/cn/manifold)是大疆无人机上的机载miniPC，其中的核心板是NVIDIA的嵌入式视觉板Jetson Tegra K1。不过于2019年已经停产。由于安装妙算过程中试过很多坑，所以笔者在此记录一下安装和配环境的过程。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+
+### （0）系统重装
+- 制作系统前需要准备:
+
+1. 系统镜像（可以使用[DJI官网上的镜像](https://dl.djicdn.com/downloads/manifold/manifold_image_v1.0.tar.gz)）
+2. Ubuntu 14.04 的计算机一台（可以用虚拟机但是笔者试了有些慢不推荐），一定是14.04的系统，笔者用过16.04的来制作会产生显示闪烁的问题。一定是14.04!一定是14.04!一定是14.04!重要的事情说三遍。
+
+
+
+```markdown
+Syntax highlighted code block
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
