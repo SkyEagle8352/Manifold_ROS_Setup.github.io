@@ -101,6 +101,11 @@ sudo -E apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6
 sudo apt-get update
 ```
 ### 安装ROS
+在安装之前有坑，首先要安装dpkg，否则会报错，详见[这里](https://github.com/ros-infrastructure/catkin_pkg/issues/230)。
+```shell
+sudo apt-get install dpkg
+```
+
 输入如下指令安装ROS：(此处等待过程非常漫长，建议睡觉前开始[手动捂脸])
 ```shell
 sudo apt-get install ros-indigo-ros-base
@@ -125,3 +130,4 @@ source ~/.bashrc
 - [https://blog.csdn.net/u011619535/article/details/76100631](https://blog.csdn.net/u011619535/article/details/76100631)
 - [http://wiki.ros.org/indigo/Installation/UbuntuARM](http://wiki.ros.org/indigo/Installation/UbuntuARM)
 - [https://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/](https://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/)
+- [https://github.com/ros-infrastructure/catkin_pkg/issues/230](https://github.com/ros-infrastructure/catkin_pkg/issues/230)
