@@ -118,3 +118,9 @@ rosdep update
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
+## 感谢
+本文参考了以下内容：
+- [Manifold用户手册v1.2](https://dl.djicdn.com/downloads/manifold/20170918/Manifold_User_Manual_v1.2_CH.pdf)
+- [https://blog.csdn.net/u011619535/article/details/76100631](https://blog.csdn.net/u011619535/article/details/76100631)
+- [http://wiki.ros.org/indigo/Installation/UbuntuARM](http://wiki.ros.org/indigo/Installation/UbuntuARM)
+- [https://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/](https://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/)
