@@ -113,7 +113,6 @@ sudo apt-get install python-rosdep
 sudo rosdep init
 rosdep update
 ```
-
 输入如下指令，设置环境
 ```shell
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
